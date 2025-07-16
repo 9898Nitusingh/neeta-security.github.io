@@ -1,0 +1,72 @@
+:root {
+  --blue: #0056b3;
+  --silver: #c0c0c0;
+  --cream: #fdfdfb;
+  --grey: #444;
+  --white: #ffffff;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: var(--cream);
+  color: var(--grey);
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--white);
+  padding: 15px 30px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+nav .logo {
+  font-weight: bold;
+  color: var(--blue);
+  font-size: 1.5rem;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+nav a {
+  text-decoration: none;
+  color: var(--grey);
+}
+nav a:hover {
+  color: var(--blue);
+}
+
+/* Hero Section */
+.hero {
+  background: url('../images/hero-bg.jpg') center/cover no-repeat;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  padding: 0 50px;
+  color: var(--white);
+}
+.hero-content {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 600px;
+}
+.hero h1 {
+  color: var(--blue);
+}
+.cta {
+  background-color: var(--blue);
+  color: var(--white);
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+}
+.cta:hover {
+  background-color: var(--grey);
+}
